@@ -1,2 +1,21 @@
-# SIC-AI-KSA-2023
-Final Project for SIC AI KSA 2023
+<!-- markdownlint-disable MD024-->
+# **SIC-AI-KSA-2023 PROJECT** 📜📝
+
+ Final Project for Samsung Innovation Campus X Misk Skills
+
+### 🤔 Idea 
+
+
+### 📝 Tools
+
+### ⚡ Installation
+
+### 📝 Additional notes
+
+### Team Members
+- Sara
+- Ghassan
+- Meshal
+- Martada
+- Abdullah
+- Ruba Almuhya
