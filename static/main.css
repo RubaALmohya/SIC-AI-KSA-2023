@@ -1,0 +1,165 @@
+* {
+    /* gradient colors from light to dark */
+    --color1: #212529;
+    --color2: #343A40;
+    --color3: #495057;
+    --color4: #6C757D;
+    --color5: #ADB5BD;
+    --color6: #CED4DA;
+
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+}
+
+html {
+    background-color: var(--color3);
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+
+}
+
+
+
+
+.loading::after {
+    content: "Loading";
+    animation: loading 2s infinite;
+}
+
+.loading {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    z-index: 2;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--color1);
+    font-size: 2rem;
+
+}
+
+@keyframes loading {
+    0% {
+        content: "Loading";
+    }
+
+    25% {
+        content: "Loading .";
+    }
+
+    50% {
+        content: "Loading . .";
+    }
+
+    75% {
+        content: "Loading . . .";
+    }
+}
+
+.main {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    width: 90%;
+    height: 90%;
+    background-color: var(--color2);
+    border-radius: 10px;
+}
+
+
+
+
+
+.upload_box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+    width: 70%;
+    height: 80%;
+    border-radius: 10px;
+
+}
+
+
+#input_img {
+    margin-top: auto;
+    aspect-ratio: calc(4/3);
+    max-width: 640px;
+    max-height: 480px;
+  
+}
+
+.file_btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: auto;
+    margin-bottom: 30px;
+    background-color: var(--color4);
+    justify-content: center;
+    border-radius: 10px;
+    width: 150px;
+    height: 50px;
+    border: 1px solid var(--color4);
+}
+
+.file_btn:hover {
+    border: 1px solid white;
+    box-shadow: 0 0 7px white;
+}
+
+.file_btn:active {
+    text-shadow: 0 0 3px white;
+}
+
+
+.prediction {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+    
+    text-align: center;
+    margin-right: 30px;
+    gap: 10px;
+
+}
+
+.prediction div {
+    min-width: 275px;
+    min-height: 35px;
+    border-radius: 10px;
+    background-color: var(--color1);
+    display: flex;
+    align-items: center;
+    
+    font-size: 1rem;
+    transition: all 2.5s ease-in-out;
+}
+/* 
+.prediction :first-child {
+    width: 350px;
+} */
+
+.prediction div :first-child {
+    margin-left: 10px;
+}
+
+.prediction div :last-child {
+    margin-left: auto;
+    margin-right: 10px;
+}
+
